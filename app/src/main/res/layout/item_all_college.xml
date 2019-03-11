@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/home_bg"
+              android:orientation="vertical"
+              android:paddingBottom="3dp">
+
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:background="@drawable/home_item_bg">
+
+        <ImageView
+            android:id="@+id/item_all_college_head"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/teacher"/>
+
+        <TextView
+            android:id="@+id/item_all_college_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@id/item_all_college_head"
+            android:text="大连理工大学"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/item_all_college_eng_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_all_college_name"
+            android:layout_marginBottom="6px"
+            android:layout_marginLeft="38px"
+            android:layout_toRightOf="@id/item_all_college_head"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:text="Dalian What College"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/item_all_college_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_all_college_eng_name"
+            android:layout_marginBottom="6px"
+            android:layout_marginLeft="38px"
+            android:layout_toRightOf="@id/item_all_college_head"
+            android:maxLength="3"
+            android:text="创建于:1949年"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="成立于"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/item_all_college_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="700"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="8px"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/home_bg"/>-->
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</LinearLayout>

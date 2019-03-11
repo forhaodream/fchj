@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_rlc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_name"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的专业"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size"/>
+
+    </RelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/all_choose_rlc"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_below="@id/title_rlc"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/choose_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="全选"
+            android:textColor="@color/dark_gray"/>
+
+        <ImageView
+            android:id="@+id/choose_delete_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/lajitong"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ListView
+        android:id="@+id/my_maj_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/all_choose_rlc"
+        android:layout_marginBottom="220px"/>
+    android:choiceMode="multipleChoice"
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220px"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已选"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/my_maj_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/my_maj_tv_all_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / 0"
+                android:textSize="14sp"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <Button
+            android:id="@+id/my_maj_choose_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="120px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@drawable/change_blue"
+            android:text="生成最佳选科方案"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

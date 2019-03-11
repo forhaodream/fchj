@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/item_travel_pic"
+            android:layout_width="match_parent"
+            android:layout_height="600px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fchj_e"/>
+
+        <Button
+            android:id="@+id/item_travel_price"
+            android:layout_width="wrap_content"
+            android:layout_height="120px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="400px"
+            android:background="@drawable/button_orange"
+            android:textColor="@android:color/white"/>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_below="@id/item_travel_pic"
+            android:descendantFocusability="blocksDescendants">
+
+
+            <TextView
+                android:id="@+id/item_travel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20px"
+                android:ellipsize="end"
+                android:maxEms="12"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/item_travel_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_travel_title"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="10px"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/gray"
+                android:textSize="12sp"/>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

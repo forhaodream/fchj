@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:don="http://schemas.android.com/apk/res-auto"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:orientation="vertical">
+
+    <!--<com.don.pieviewlibrary.PercentPieView-->
+    <!--android:id="@+id/pieView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="850px"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@android:color/white"-->
+    <!--don:centerTextColor="#ffffff"-->
+    <!--don:centerTextSize="18sp"-->
+    <!--don:circleWidth="55dp"-->
+    <!--don:dataTextColor="#ffffff"-->
+    <!--don:dataTextSize="8sp"/>-->
+
+    <RelativeLayout
+        android:layout_width="330px"
+        android:layout_height="330px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_white">
+
+
+        <TextView
+            android:id="@+id/pie_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="3778"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/pie_sum"
+            android:layout_centerHorizontal="true"
+            android:text="匹配组合"
+            android:textColor="@color/dark_gray"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pie_sum"
+            android:layout_centerHorizontal="true"
+            android:text="本科"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

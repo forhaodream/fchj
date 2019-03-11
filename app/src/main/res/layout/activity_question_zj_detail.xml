@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_name"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="问题详细"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size"/>
+
+        <TextView
+            android:id="@+id/reply_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60px"
+            android:text="提交"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size"/>
+    </RelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        android:layout_margin="60px"
+
+        <ImageView
+            android:id="@+id/question_wen"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@mipmap/wen8"/>
+
+        <TextView
+            android:id="@+id/question_wen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@id/question_wen"
+            android:text="问题"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        android:layout_margin="60px"
+
+        <TextView
+            android:id="@+id/question_xiang_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="详细:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+        android:layout_marginBottom="10px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="10px"
+
+        <TextView
+            android:id="@+id/question_xiang_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/question_xiang_img"
+            android:text="问题"
+            android:textColor="#515151"
+            android:textSize="15sp"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/home_bg"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/question_da"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@mipmap/da3"/>
+
+        <EditText
+            android:id="@+id/question_da_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="60px"
+            android:layout_toRightOf="@id/question_da"
+            android:hint="请答复问题"
+            android:textColor="#515151"
+            android:textSize="20sp"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</LinearLayout>

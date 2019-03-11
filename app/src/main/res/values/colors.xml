@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#266eaf</color>60a0fa
+
+
+    <color name="text_lan">#0295DC</color>
+    <color name="text_gray">#989898</color>
+    <color name="text_grays">#707070</color>
+    <color name="view_color">#e9e7ef</color>
+
+    <color name="fchj_blue">#60a0fa</color>
+    <color name="home_bg">#eaf1fd</color>
+    <color name="home_text">#3a8ffc</color>
+    <color name="title_lan">#266eaf</color>60a0fa
+    <color name="home_lan">#D1E5FE</color>
+    <color name="tou_ming">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="gray">#ccc</color>
+    <color name="dark_gray">#444</color>
+    <color name="text_hui">#B3B3B3</color>
+    <color name="text_green">#1296db</color>
+
+
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+    <color name="view_hui">#F8F8F8</color>
+    <color name="list_view_driver">#D8D8D8</color>
+    <color name="red">#ee0101</color>
+    <color name="dark_blue">#266eaf</color>
+
+
+    <color name="colorBg">#f5f5f5</color>
+    <color name="colorBlack33">#333333</color>
+    <color name="pink_fc4f74">#fc4f74</color>
+    <color name="aaa">#551a8b</color>
+
+    <!--<color name="color_1">#FE9D4C</color>-->
+    <!--<color name="color_2">#FFC24B</color>-->
+    <!--<color name="color_3">#FED74C</color>-->
+    <!--<color name="color_4">#EDE84E</color>-->
+    <!--<color name="color_5">#98DE4A</color>-->
+    <!--<color name="color_6">#4DD04C</color>-->
+    <!--<color name="color_7">#4BD8AE</color>-->
+    <!--<color name="color_8">#97E7F0</color>-->
+    <!--<color name="color_9">#4CD6F0</color>-->
+    <!--<color name="color_10">#06A4FB</color>-->
+    <color name="color_1">#fff800</color>
+    <color name="color_2">#ffcf00</color>
+    <color name="color_3">#fea900</color>
+    <color name="color_4">#fe8100</color>
+    <color name="color_5">#ff5c01</color>
+    <color name="color_6">#fe0000</color>
+    <color name="color_7">#f60500</color>
+    <color name="color_8">#ff0022</color>
+    <color name="color_9">#ff0068</color>
+    <color name="color_10">#ff00ac</color>
+    <color name="color_11">#ff00ee</color>
+    <color name="color_12">#cf00fe</color>
+    <color name="color_13">#9100ff</color>
+    <color name="color_14">#7100fe</color>
+    <color name="color_15">#5300fe</color>
+    <color name="color_16">#1700ff</color>
+    <color name="color_17">#0029ea</color>
+    <color name="color_18">#005fff</color>
+    <color name="color_19">#0098ff</color>
+    <color name="color_20">#00ccff</color>
+    <color name="color_21">#00fefc</color>
+    <color name="color_22">#00ffc8</color>
+    <color name="color_23">#00ff95</color>
+    <color name="color_24">#00ff65</color>
+    <color name="color_25">#00ff32</color>
+    <color name="color_26">#00ff03</color>
+    <color name="color_27">#5aff00</color>
+    <color name="color_28">#86ff00</color>
+    <color name="color_29">#b4ff00</color>
+    <color name="color_30">#c7ff00</color>
+    <color name="color_31">#dcff00</color>
+
+    <color name="choose_sub">#99CCFF</color>
+
+
+    <color name="wuli">#A2BFE9</color>
+    <color name="huaxue">#C0BBF1</color>
+    <color name="shengwu">#B3DD9B</color>
+    <color name="dili">#99CCFF</color>
+    <color name="zhengzhi">#FEB3AD</color>
+    <color name="lishi">#FFD19F</color>
+    <color name="jishu">#94D9E8</color>
+
+
+</resources>

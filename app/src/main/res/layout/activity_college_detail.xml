@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/video_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:text="学校数据"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size"/>
+
+
+    </RelativeLayout>
+
+    <com.fchj.czglgz.chengzhangguanli_high.view.CustomHorizontalScrollView
+        android:id="@+id/college_list_hs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/yuanxiao"
+                    android:layout_width="330px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:maxLength="16"
+                    android:text="院校"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/zhuanye"
+                    android:layout_width="330px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:maxLength="16"
+                    android:text="专业名称"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/pici"
+                    android:layout_width="230px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:maxLength="16"
+                    android:text="录取批次"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/pingjunfen"
+                    android:layout_width="230px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:maxLength="16"
+                    android:text="平均分"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/zuigaofen"
+                    android:layout_width="230px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:maxLength="16"
+                    android:text="最高分"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/zuidifen"
+                    android:layout_width="230px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:maxLength="16"
+                    android:text="最低分"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/list_view_driver"/>
+
+            <com.lh.ch.pulltorefresh.PullToRefreshLayout
+                android:id="@+id/college_pullrefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.lh.ch.pulltorefresh.PullableListView
+                    android:id="@+id/college_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"/>
+            </com.lh.ch.pulltorefresh.PullToRefreshLayout>
+
+        </LinearLayout>
+    </com.fchj.czglgz.chengzhangguanli_high.view.CustomHorizontalScrollView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

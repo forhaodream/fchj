@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:orientation="vertical">
+
+
+    <com.lh.ch.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/zx_frag_pullrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lh.ch.pulltorefresh.PullableListView
+            android:id="@+id/zx_frag_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+
+
+    </com.lh.ch.pulltorefresh.PullToRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

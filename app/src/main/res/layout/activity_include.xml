@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/video_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="校园介绍"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size"/>
+
+
+    </RelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_marginTop="20px"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/college_detail_head"
+            android:layout_width="230px"
+            android:layout_height="230px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fchj_e"/>
+
+        <TextView
+            android:id="@+id/college_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@id/college_detail_head"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/college_detail_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/college_detail_name"
+            android:layout_marginLeft="68px"
+            android:layout_marginTop="40px"
+            android:layout_toRightOf="@id/college_detail_head"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22px"
+        android:background="@color/view_hui"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/include_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="6dp"
+            android:padding="10dp"
+            android:textColor="#696969"
+            android:textSize="15sp"/>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

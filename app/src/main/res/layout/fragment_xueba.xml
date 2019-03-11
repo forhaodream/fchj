@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/fuwu_detail_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:background="@color/title_lan">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/title_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="中国考试志愿网-家长端"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="17sp"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/home_to_ka"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:src="@mipmap/tishi"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <com.lh.ch.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/xb_frag_pullrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lh.ch.pulltorefresh.PullableListView
+            android:id="@+id/xb_frag_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:divider="@null"/>
+
+
+    </com.lh.ch.pulltorefresh.PullToRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

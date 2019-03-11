@@ -1,0 +1,75 @@
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_name"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="院校大全"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size"/>
+
+        <ImageView
+            android:id="@+id/title_search"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_text_size"
+            android:src="@mipmap/ss"/>
+
+    </RelativeLayout>
+
+    <com.fchj.czglgz.chengzhangguanli_high.dropdownmenu.DropDownMenu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:dddividerColor="@android:color/white"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddmenuIconToRight="true"
+        app:ddmenuSelectedIcon="@mipmap/drop_down_selected_icon"
+        app:ddmenuTextSize="13sp"
+        app:ddmenuUnselectedIcon="@mipmap/pic_white"
+        app:ddtextSelectedColor="@color/drop_down_unselected"
+        app:ddtextUnselectedColor="@color/drop_down_unselected"
+        app:ddunderlineColor="@color/view_hui">
+
+
+        <com.lh.ch.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/all_college_pullrefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dropDownMenu_underLine">
+
+            <com.lh.ch.pulltorefresh.PullableListView
+                android:id="@+id/all_college_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none"/>
+        </com.lh.ch.pulltorefresh.PullToRefreshLayout>
+
+    </com.fchj.czglgz.chengzhangguanli_high.dropdownmenu.DropDownMenu>
+</com.zhy.autolayout.AutoLinearLayout>

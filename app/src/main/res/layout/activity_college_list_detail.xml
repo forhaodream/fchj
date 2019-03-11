@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_name"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="大学详情"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:id="@+id/home_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/college_detail_head"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80px"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/fchj_e"/>
+
+                <TextView
+                    android:id="@+id/college_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="20px"
+                    android:layout_toRightOf="@id/college_detail_head"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/college_detail_eng_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/college_detail_name"
+                    android:layout_marginBottom="6px"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="20px"
+                    android:layout_toRightOf="@id/college_detail_head"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/college_detail_years"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/college_detail_eng_name"
+                    android:layout_marginBottom="6px"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="20px"
+                    android:layout_toRightOf="@id/college_detail_head"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/college_detail_student_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/college_detail_years"
+                    android:layout_marginBottom="6px"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="20px"
+                    android:layout_toRightOf="@id/college_detail_head"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="22px"
+                android:background="@color/view_hui"/>
+            <!--校园介绍-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_name"
+                android:background="#ffffff">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:drawableLeft="@mipmap/sanjiao"
+                    android:drawablePadding="10px"
+                    android:text="校园介绍"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/college_include_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40px"
+                    android:drawableRight="@mipmap/jiantou"
+                    android:text="详情"
+                    android:textColor="@color/title_lan"
+                    android:textSize="@dimen/college_size"
+                    android:visibility="invisible"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/college_xingzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90px"
+                    android:layout_marginTop="30px"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/college_include"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:layout_marginTop="20px"
+                    android:maxLines="4"
+                    android:textColor="#808080"
+                    android:textSize="15sp"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32px"
+                android:background="@color/view_hui"/>
+            <!--校园风光-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_name"
+                android:background="@android:color/white">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:drawableLeft="@mipmap/sanjiao"
+                    android:drawablePadding="10px"
+                    android:text="校园风光"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/college_scene_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40px"
+                    android:drawableRight="@mipmap/jiantou"
+                    android:text="详情"
+                    android:textColor="@color/title_lan"
+                    android:textSize="@dimen/college_size"
+                    android:visibility="invisible"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="360px"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_one"
+                        android:layout_width="320px"
+                        android:layout_height="320px"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/fchj_e"/>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="280px"
+                        android:layout_height="90px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:background="#80000000">
+
+                        <TextView
+                            android:id="@+id/img_one_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="校园设施"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"/>
+                    </com.zhy.autolayout.AutoRelativeLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_two"
+                        android:layout_width="320px"
+                        android:layout_height="320px"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/fchj_e"/>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="320px"
+                        android:layout_height="80px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:background="#80000000">
+
+                        <TextView
+                            android:id="@+id/img_two_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="校园设施"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"/>
+                    </com.zhy.autolayout.AutoRelativeLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30px"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_three"
+                        android:layout_width="320px"
+                        android:layout_height="320px"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/fchj_e"/>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="320px"
+                        android:layout_height="90px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:background="#80000000">
+
+                        <TextView
+                            android:id="@+id/img_three_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="校园设施"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"/>
+                    </com.zhy.autolayout.AutoRelativeLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32px"
+                android:background="@color/view_hui"/>
+            <!--科研教学-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_name"
+                android:background="@android:color/white">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:drawableLeft="@mipmap/sanjiao"
+                    android:drawablePadding="10px"
+                    android:text="科研教学"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <!--<TextView-->
+                <!--android:id="@+id/college_teachers_detail"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="40px"-->
+                <!--android:drawableRight="@mipmap/jiantou"-->
+                <!--android:text="详情"-->
+                <!--android:textColor="@color/title_lan"-->
+                <!--android:textSize="@dimen/college_size"/>-->
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white">
+
+                    <ImageView
+                        android:id="@+id/college_shuo"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:src="@mipmap/shuoshi"/>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/college_shuo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/college_shuo_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30px"
+                            android:text="硕士点"
+                            android:textColor="@color/text_gray"
+                            android:textSize="16sp"/>
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white">
+
+                    <ImageView
+                        android:id="@+id/college_bo"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60px"
+                        android:src="@mipmap/boshi"/>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/college_bo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/college_bo_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30px"
+                            android:text="博士点"
+                            android:textColor="@color/text_gray"
+                            android:textSize="16sp"/>
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32px"
+                android:background="@color/view_hui"/>
+            <!--专业展示-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_name"
+                android:background="@android:color/white">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:drawableLeft="@mipmap/sanjiao"
+                    android:drawablePadding="10px"
+                    android:text="专业展示"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/college_major_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40px"
+                    android:drawableRight="@mipmap/jiantou"
+                    android:text="详情"
+                    android:textColor="@color/title_lan"
+                    android:textSize="@dimen/college_size"
+                    android:visibility="invisible"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/yuanxiao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLength="16"
+                    android:text="专业名称"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/zhuanye"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLength="16"
+                    android:text="科类"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/pici"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLength="16"
+                    android:text="@string/six_num"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:id="@+id/pingjunfen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLength="16"
+                    android:text="@string/seven_num"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/list_view_driver"/>
+
+            <ListView
+                android:id="@+id/college_list_detail_lv"
+                android:layout_width="match_parent"
+                android:layout_height="360px"
+                android:background="@android:color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32px"
+                android:background="@color/view_hui"/>
+            <!--联系方式-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_name"
+                android:background="@android:color/white">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:drawableLeft="@mipmap/sanjiao"
+                    android:drawablePadding="10px"
+                    android:text="联系方式"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/college_test_one"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="3dp"
+                    android:src="@mipmap/blue_web"/>
+
+                110px
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/college_test_one"
+                    android:text="浏览官方网址"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/college_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:maxLength="25"
+                    android:textColor="@color/title_lan"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/college_test"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="3dp"
+                    android:src="@mipmap/blue_web"/>
+
+                110px
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/college_test"
+                    android:text="浏览招生网址"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/college_detail_zs_web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:maxLength="25"
+                    android:textColor="@color/title_lan"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/test_two"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="3dp"
+                    android:src="@mipmap/blue_address"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/test_two"
+                    android:text="学校地址"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/college_detail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:maxLength="15"
+                    android:textColor="@color/title_lan"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:id="@+id/personal_msg_rl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/personal_update_img_no"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="3dp"
+                    android:src="@mipmap/blue_phone"/>
+
+                110px
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/personal_update_img_no"
+                    android:text="拨打招生电话"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/college_detail_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:maxLength="12"
+                    android:textColor="@color/title_lan"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/gray"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/popup_voca_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_name"
+            android:background="@color/title_lan">
+
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:padding="20px"
+
+        <ListView
+            android:id="@+id/popup_vocation_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/popup_voca_title"
+            android:divider="@null"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</android.support.v7.widget.CardView>
+
+

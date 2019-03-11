@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="VerticalBannerView">
+        <attr name="gap" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="scene">
+        <attr name="leftMargin" format="dimension"/>
+        <attr name="leftDistance" format="dimension"/>
+        <attr name="rightDistance" format="dimension"/>
+        <attr name="verticalDistance" format="dimension"/>
+        <attr name="textSize" format="float"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="pile">
+        <attr name="interval" format="dimension"/>
+        <attr name="sizeRatio" format="float"/>
+        <attr name="scaleStep" format="float"/>
+        <attr name="displayCount" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="DropDownMenu">
+
+        <attr name="ddunderlineColor" format="color"/>
+        <attr name="dddividerColor" format="color"/>
+        <attr name="ddtextSelectedColor" format="color"/>
+        <attr name="ddtextUnselectedColor" format="color"/>
+        <attr name="ddmenuBackgroundColor" format="color"/>
+        <attr name="ddmaskColor" format="color"/>
+        <attr name="ddmenuTextSize" format="dimension"/>
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+        <attr name="ddmenuIconToRight" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="PieView">
+        <attr name="centerTextSize" format="dimension"/>
+        <attr name="dataTextSize" format="dimension"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="dataTextColor" format="color"/>
+        <attr name="circleWidth" format="dimension"/>
+    </declare-styleable>
+</resources>

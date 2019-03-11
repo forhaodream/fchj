@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:dm="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".volunteer.CollegeNewsActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_name"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="院校大全"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size"/>
+
+    </RelativeLayout>
+
+    <!--<com.zhy.autolayout.AutoLinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="3">-->
+
+
+    <!--<com.twiceyuan.dropdownmenu.DropdownMenu-->
+    <!--android:id="@+id/college_list_address"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_weight="1"-->
+    <!--dm:iconColor="#aaa"-->
+    <!--dm:listBgColor="#fff"-->
+    <!--dm:titleBgColor="#eee"-->
+    <!--dm:titleHighLight="@color/colorPrimary"-->
+    <!--dm:titleText="Select Hero"-->
+    <!--dm:titleTextSize="14sp"/>-->
+
+    <!--<com.twiceyuan.dropdownmenu.DropdownMenu-->
+    <!--android:id="@+id/college_list_kinds"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_weight="1"-->
+    <!--dm:iconColor="#aaa"-->
+    <!--dm:listBgColor="#fff"-->
+    <!--dm:titleBgColor="#eee"-->
+    <!--dm:titleHighLight="@color/colorPrimary"-->
+    <!--dm:titleText="Select Hero"-->
+    <!--dm:titleTextSize="14sp"/>-->
+
+    <!--<com.twiceyuan.dropdownmenu.DropdownMenu-->
+    <!--android:id="@+id/college_list_subject"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_weight="1"-->
+    <!--dm:iconColor="#aaa"-->
+    <!--dm:listBgColor="#fff"-->
+    <!--dm:titleBgColor="#eee"-->
+    <!--dm:titleHighLight="@color/colorPrimary"-->
+    <!--dm:titleText="Select Hero"-->
+    <!--dm:titleTextSize="14sp"/>-->
+
+    <!--</com.zhy.autolayout.AutoLinearLayout>-->
+
+    <com.fchj.czglgz.chengzhangguanli_high.dropdownmenu.DropDownMenu
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+    </com.fchj.czglgz.chengzhangguanli_high.dropdownmenu.DropDownMenu>
+
+
+    <com.lh.ch.pulltorefresh.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/yxl_pullrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+
+        <com.lh.ch.pulltorefresh.PullableListView
+            android:id="@+id/frag_video_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+
+    </com.lh.ch.pulltorefresh.PullToRefreshLayout>
+
+
+</LinearLayout>

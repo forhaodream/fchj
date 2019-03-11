@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_zx_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:text="沈阳师范大学校长"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <!--<uk.co.senab.photoview.PhotoView-->
+    <!--android:id="@+id/item_zixun_big_pic"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="520px"-->
+    <!--android:layout_margin="50px"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@mipmap/ic_launcher"/>-->
+    <ImageView
+        android:id="@+id/item_zixun_big_pic"
+        android:layout_width="match_parent"
+        android:layout_height="520px"
+        android:layout_margin="50px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

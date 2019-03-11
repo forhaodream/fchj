@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     xmlns:adnroid="http://schemas.android.com/apk/res-auto"
+                                     android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fuwu_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/title_fanhui"
+            android:text="用户注册"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_size"/>
+
+
+    </RelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000px"
+        android:layout_marginTop="200px"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_til_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/login_et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="用户名"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <com.fchj.czglgz.chengzhangguanli_high.view.MyEditView
+            android:id="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:layout_marginTop="20px"
+            android:drawableLeft="@mipmap/img_phone"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/edit_cha"
+            android:hint="请输入手机号"
+            android:singleLine="true"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <com.fchj.czglgz.chengzhangguanli_high.view.MyEditView
+                android:id="@+id/ed_yanzheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"
+                android:layout_marginTop="20px"
+                android:drawableLeft="@mipmap/yanzhengma"
+                android:drawableRight="@mipmap/edit_cha"
+                android:hint="请输入验证码"
+                android:singleLine="true"/>
+
+
+            <Button
+                android:id="@+id/zhuce_yzm_text"
+                android:layout_width="320px"
+                android:layout_height="100px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100px"
+                android:background="@drawable/yzm_circle"
+                android:text="发送验证码"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.fchj.czglgz.chengzhangguanli_high.view.MyEditView
+            android:id="@+id/ed_psdfirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:layout_marginTop="20px"
+            android:drawableLeft="@mipmap/psdfir"
+            android:drawableRight="@mipmap/edit_cha"
+            android:hint="请输入密码"
+            android:password="true"
+            android:singleLine="true"/>
+
+        <com.fchj.czglgz.chengzhangguanli_high.view.MyEditView
+            android:id="@+id/ed_psdsecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:layout_marginTop="20px"
+            android:drawableLeft="@mipmap/psdsec"
+            android:drawableRight="@mipmap/edit_cha"
+            android:hint="请再次输入密码"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="20sp"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_tozhuce"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="180px"
+        android:background="@drawable/button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="找回密码"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

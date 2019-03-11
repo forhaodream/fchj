@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/home_bg"
+                                     android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_name"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size" />
+
+    </RelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/about_logo"
+            android:layout_width="240px"
+            android:layout_height="240px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:src="@mipmap/logo5"/>
+
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5dp"
+            android:text="    方成鸿基科技有限公司成立于2012年，在沈阳设立总公司，并在深圳成立生产和研发基地。公司致力于成为智慧校园和智慧教育产品的领导者，打造从幼教、小学、初中、高中、大学直至企业的全链条式教育生态链，解决了中小学、高中学生及家长的教育困惑，中国考试志愿网、中国青少年生涯教育指导集团和方成鸿基生涯规划教育研究院为学生的学业生涯规划及职业生涯规划做了全方位的辅导与提升"
+            android:textSize="16sp"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_below="@id/about_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="150px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司官网: "
+            android:textSize="18sp"
+            android:id="@+id/textView4"/>
+
+        <TextView
+            android:id="@+id/about_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:textColor="#6e8bc5"
+            android:text="www.fchj.net"
+            android:textSize="18sp"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160px"
+        android:layout_below="@id/about_text"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信公众号:"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="fchj_edu     "
+            android:textSize="18sp"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="360px"
+        android:layout_height="260px"
+        android:layout_marginBottom="25px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="25px">
+
+        <ImageView
+            android:id="@+id/item_jz_video_pic"
+            android:layout_width="360px"
+            android:layout_height="260px"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fchj_e"/>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/bofang2"/>
+
+    </RelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_jz_video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="40px"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/item_jz_video_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="20px"
+            android:maxLines="2"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

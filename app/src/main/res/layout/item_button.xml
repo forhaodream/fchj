@@ -1,0 +1,20 @@
+<!--<RelativeLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content">-->
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_btn_list_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/blue_button"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="工程师"
+    android:textColor="@color/dark_blue"
+    android:textSize="14sp"/>
+    <!--</RelativeLayout>-->

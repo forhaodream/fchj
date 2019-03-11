@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="100px"
+                                       android:background="@android:color/white"
+                                       android:minHeight="100px"
+                                       android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_color_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:text="111111"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"/>
+
+    <ProgressBar
+        android:id="@+id/item_color_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="420px"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50px"
+        android:layout_toRightOf="@id/item_color_title"
+        android:background="@drawable/progressbar_bg"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/progress_bar_1"/>
+
+
+    <TextView
+        android:id="@+id/item_color_title_maj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50px"
+        android:textColor="@color/text_gray"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/item_color_title_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50px"
+        android:layout_toLeftOf="@id/item_color_title_maj"
+        android:textColor="@color/text_gray"
+        android:textSize="14sp"/>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

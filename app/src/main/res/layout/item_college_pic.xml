@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="240px"
+                                       android:background="@android:color/white">
+
+    <!--<com.bm.library.PhotoView-->
+    <!--android:id="@+id/item_college_pic"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:src="@mipmap/fchj_e"/>-->
+
+    <ImageView
+        android:id="@+id/item_college_pic"
+        android:layout_width="300px"
+        android:layout_height="240px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fchj_e"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000">
+
+        <TextView
+            android:id="@+id/img_three_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="校园设施"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

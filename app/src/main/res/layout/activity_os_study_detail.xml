@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       xmlns:custom="http://schemas.android.com/tools"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/os_detail_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1350px">
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/os_study_detail_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="700px">
+
+                    <com.fchj.czglgz.chengzhangguanli_high.overseasstudy.OsBannerView
+                        android:id="@+id/os_study_detail_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"/>
+
+                    <ImageView
+                        android:id="@+id/return_img"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="50px"
+                        android:layout_marginTop="60px"
+                        android:src="@mipmap/fanhui"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:id="@+id/card_bg_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/os_study_detail_relative"
+                    android:background="@color/view_color"/>
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/os_college_rlc"
+                            android:layout_width="match_parent"
+                            android:layout_height="260px"
+                            android:background="@drawable/item_college_drop">
+
+                            <ImageView
+                                android:id="@+id/os_study_d_rlc_head"
+                                android:layout_width="160px"
+                                android:layout_height="160px"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="40px"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/teacher"/>
+
+                            <TextView
+                                android:id="@+id/os_study_d_rlc_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="30px"
+                                android:layout_toRightOf="@id/os_study_d_rlc_head"
+                                android:maxLength="14"
+                                android:text="大学"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+
+                            <TextView
+                                android:id="@+id/os_study_d_rlc_eng_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/os_study_d_rlc_name"
+                                android:layout_marginBottom="20px"
+                                android:layout_marginLeft="38px"
+                                android:layout_toRightOf="@id/os_study_d_rlc_head"
+                                android:ellipsize="end"
+                                android:maxLength="20"
+                                android:text="College"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:id="@+id/os_study_d_rlc_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/os_study_d_rlc_eng_name"
+                                android:layout_marginBottom="6px"
+                                android:layout_marginLeft="38px"
+                                android:layout_toRightOf="@id/os_study_d_rlc_head"
+                                android:drawableLeft="@mipmap/blue_address"
+                                android:ellipsize="end"
+                                android:maxEms="10"
+                                android:maxLines="1"
+                                android:text="address"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp"/>
+
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/os_college_rlc"
+                            android:layout_marginBottom="30px"
+                            android:orientation="vertical">
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/os_tv_q"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                                <TextView
+                                    android:id="@+id/os_tv_w"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/os_tv_e"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                                <TextView
+                                    android:id="@+id/os_tv_r"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/os_tv_t"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                                <TextView
+                                    android:id="@+id/os_tv_y"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/os_tv_u"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                                <TextView
+                                    android:id="@+id/os_tv_i"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/os_tv_o"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                                <TextView
+                                    android:id="@+id/os_tv_p"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/os_tv_a"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                                <TextView
+                                    android:id="@+id/os_tv_s"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/os_tv_d"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                                <TextView
+                                    android:id="@+id/os_tv_f"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:textColor="@color/text_gray"
+                                    android:textSize="13sp"/>
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/os_detail_view"
+                        android:layout_width="5dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:background="@color/dark_blue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@id/os_detail_view"
+                        android:text="院校介绍"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:id="@+id/os_study_detail_include"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32px"
+                android:background="@color/view_hui"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/os_detail_view4"
+                        android:layout_width="5dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:background="@color/dark_blue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@id/os_detail_view4"
+                        android:text="热门专业"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.nex3z.flowlayout.FlowLayout
+                    android:id="@+id/flow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    app:flChildSpacing="7dp"
+                    app:flRowSpacing="8dp"/>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32px"
+                android:background="@color/view_hui"/>
+
+            <!--申请条件-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/os_detail_view3"
+                        android:layout_width="5dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:background="@color/dark_blue"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@id/os_detail_view3"
+                        android:text="申请条件"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:id="@+id/os_study_detail_term"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32px"
+                android:background="@color/view_hui"/>
+            <!--联系方式-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_name"
+                android:background="@android:color/white">
+
+
+                <View
+                    android:id="@+id/os_detail_view2"
+                    android:layout_width="5dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@color/dark_blue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@id/os_detail_view2"
+                    android:text="联系方式"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/college_test_one"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="3dp"
+                    android:src="@mipmap/blue_web"/>
+
+                110px
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/college_test_one"
+                    android:text="浏览官方网址"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/college_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:maxLength="25"
+                    android:textColor="@color/title_lan"
+                    android:textSize="13sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/college_test"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="3dp"
+                    android:src="@mipmap/blue_web"/>
+
+                110px
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/college_test"
+                    android:text="官方电子邮箱"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/college_detail_zs_web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:maxLength="20"
+                    android:textColor="@color/title_lan"
+                    android:textSize="13sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/test_two"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="3dp"
+                    android:src="@mipmap/blue_address"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/test_two"
+                    android:text="学校地址"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/college_detail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:maxLength="25"
+                    android:ellipsize="marquee"
+                    android:textColor="@color/title_lan"
+                    android:textSize="13sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:id="@+id/personal_msg_rl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/personal_update_img_no"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="3dp"
+                    android:src="@mipmap/blue_phone"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/personal_update_img_no"
+                    android:text="拨打招生电话"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/college_detail_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:maxLength="16"
+                    android:textColor="@color/title_lan"
+                    android:textSize="13sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/phone_to_ask"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#2a778a">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="手机咨询"
+                        android:textColor="@android:color/white"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/to_ask"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/dark_blue">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="咨询"
+                        android:textColor="@android:color/white"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

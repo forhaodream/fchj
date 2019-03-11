@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">金榜题名-家长端</string>
+    <string name="title">最新资讯</string>
+    <string name="chaschool">查\n学\n校</string>
+    <string name="chanum">查\n分\n数</string>
+    <string name="chazy">查\n专\n业</string>
+    <string name="six_num">2016年\n(平均分)</string>
+    <string name="seven_num">2017年\n(平均分)</string>
+    <string name="tishi">   本系统提供的院校录取数据，来源于教育权威部门。若数据有出入，请以各高校正式公布的专业录取数据为准。\n2017年最新分数每周日是持续更新，敬请期待....\n高校在公布本校的录取分时，部分数据可能综合了自主招生、加分优惠等因素，请考生注意。</string>
+
+
+    <string name="title_1">Cool card</string>
+    <string name="title_2">Ok card</string>
+    <string name="title_3">Bad card</string>
+    <string name="title_4">Ugly card</string>
+
+    <string name="text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum.</string>
+</resources>

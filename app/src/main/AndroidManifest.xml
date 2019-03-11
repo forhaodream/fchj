@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.fchj.czglgz.chengzhangguanli_high">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".util.UpdateTool"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo5"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tunVlGCx0mPHG6MvqgBfjefYjsAnlWbB"/>
+        <meta-data
+            android:name="design_width"
+            android:value="1080"/>
+        <meta-data
+            android:name="design_height"
+            android:value="1920"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.fchj.czglgz.chengzhangguanli_high.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity
+            android:name=".activity.AdsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--<activity-->
+        <!--android:name=".activity.WxTestActivity">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN"/>-->
+
+        <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+        <activity android:name=".activity.LoginActivity"/>
+
+        <!--首页-->
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <!--微信-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"/>
+
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.VIEW"/>-->
+        <!--<category android:name="android.intent.category.DEFAULT"/>-->
+        <!--<data android:scheme="wx9fefde76187f8505"/>-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:name=".dropdownmenu.DropActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".vocation.VocationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.JiaZhangActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.BannerTest"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.BaiduMapActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.XiuGaiPsdActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.NewLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CleanActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.NewZhuCeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ZhuanJiaActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ZiXunActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.XueBaActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".zhuanjiajieda.ZhuanJiaDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wodetiwen.QuestionAskActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ZiXunDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MsgActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MyAskActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SchoolDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.XiuGaiHeadPicActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ZhuCeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.KaActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AboutOurActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.SearchCollegeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.NumberListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.CollegeListDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.SearchNumberActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.SearchMajorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.CollegeNewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AboutWebActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.CollegeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".collegedetail.IncludeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.MajorListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.CollegePicDetailActivty"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".volunteer.CollegeMajorDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.ForgetActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SchoolNewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.BannerDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.XiuGaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".xuebalaile.XueBaDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wodetiwen.AskDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wodetiwen.QuestionDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wodetiwen.QuestionZjDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wodetiwen.ZJAskActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".jiazhangketang.JZNoVideoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".vocation.VocationDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mysc.MyScActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".major.MajorDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".major.MajorKindActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".test.TestTreeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".major.ThirdListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".overseasstudy.OsStudyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".overseasstudy.OsStudydDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".overseasstudy.FreeAskActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".newgaokao.ChooseSubjectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".newgaokao.GaoKaoKindActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".newgaokao.PieTeatActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".newgaokao.ExTestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".newgaokao.MajorBySubActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".newgaokao.PieGKActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".newgaokao.MBSDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".newgaokao.MyMajScByGkActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".newgaokao.MajChooseBestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".travel.TravelStudyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".travel.TravelStudyDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".test.ExPandListActivity"/>
+        <activity android:name=".test.EListActivity"/>
+        <activity android:name=".expandlistview.MbsTestActivity"/>
+        <activity android:name=".newgaokao.GetMajBestActivity"/>
+        <activity android:name=".newgaokao.NGKMajDetailActivity"/>
+        <activity android:name=".newgaokao.NewMajScActivity"/>
+
+
+    </application>
+
+</manifest>

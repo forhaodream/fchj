@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_name"
+        android:background="@color/title_lan">
+
+        <ImageView
+            android:id="@+id/title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="免费咨询"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_title_size"/>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginRight="15px"
+                    android:layout_marginTop="40px"
+                    android:background="@drawable/label_bg">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/zj_detail_ll"
+                        android:layout_width="190px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <com.fchj.czglgz.chengzhangguanli_high.view.CircleView
+                            android:id="@+id/zj_detail_head"
+                            android:layout_width="180px"
+                            android:layout_height="180px"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/teacher"/>
+
+                        <TextView
+                            android:id="@+id/zj_detail_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/zj_detail_head"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30px"
+                            android:textColor="@color/title_lan"
+                            android:textSize="16sp"/>
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.fchj.czglgz.chengzhangguanli_high.view.FoldTextView
+                        android:id="@+id/zj_detail_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_marginTop="28px"
+                        android:layout_toRightOf="@id/zj_detail_ll"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"/>
+
+                    <!--<Button-->
+                    <!--android:id="@+id/more_btn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_below="@id/zj_detail_content"-->
+                    <!--android:text="查看更多"/>-->
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:layout_marginTop="100px">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/my_msg_ml"
+                        android:text="姓名"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/free_ask_real_name"
+                        android:layout_width="500px"
+                        android:layout_height="110px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="400px"
+                        android:background="@drawable/gray_edit_bg"
+                        android:hint="您的真实姓名"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:paddingLeft="50px"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:layout_marginTop="40px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/my_msg_ml"
+                        android:text="电话"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/free_ask_phone"
+                        android:layout_width="500px"
+                        android:layout_height="120px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="400px"
+                        android:background="@drawable/gray_edit_bg"
+                        android:hint="请正确输入手机号码"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:paddingLeft="50px"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:layout_marginTop="40px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/my_msg_ml"
+                        android:text="最近就读学校"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/free_ask_old_study_school"
+                        android:layout_width="500px"
+                        android:layout_height="110px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="400px"
+                        android:background="@drawable/gray_edit_bg"
+                        android:hint="请完整输入学校全称"
+                        android:maxEms="20"
+                        android:maxLines="1"
+                        android:paddingLeft="50px"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:layout_marginTop="40px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/my_msg_ml"
+                        android:text="申请地区"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/free_ask_want_address"
+                        android:layout_width="500px"
+                        android:layout_height="110px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="400px"
+                        android:background="@drawable/gray_edit_bg"
+                        android:hint="请填写地区"
+                        android:maxEms="20"
+                        android:maxLines="1"
+                        android:paddingLeft="50px"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:layout_marginTop="40px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/my_msg_ml"
+                        android:text="申请学校"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/free_ask_school"
+                        android:layout_width="500px"
+                        android:layout_height="110px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="400px"
+                        android:background="@drawable/gray_edit_bg"
+                        android:hint="请填写学校"
+                        android:maxEms="30"
+                        android:maxLines="1"
+                        android:paddingLeft="50px"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <Button
+                    android:id="@+id/start_ask"
+                    android:layout_width="360px"
+                    android:layout_height="120px"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/change_blue"
+                    android:text="开始咨询"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_margin="50px"
+                                       android:background="@drawable/home_background">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <!--<ImageView-->
+        <!--android:src="@mipmap/ic_launcher"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="120px"/>-->
+
+        <Button
+            android:id="@+id/btn_pop_album"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#ffff"
+            android:text="该模块正在开发中"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_pop_camera"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#ffff"
+            android:text="敬请期待...."
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <Button
+            android:id="@+id/btn_pop_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#ffff"
+            android:text="我知道了"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>
